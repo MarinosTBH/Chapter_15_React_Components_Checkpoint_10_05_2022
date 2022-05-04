@@ -1,0 +1,100 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main-head{
+  height: 150px;
+  background: #FFF;
+ 
+}
+.sidenav{
+  height: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Logo added */
+.app-logo{
+  height: 10vh;
+  pointer-events: none;
+}
+
+.app-logo{
+  animation: App-logo-spin infinite 2s linear;
+}
+
+
+@keyframes App-logo-spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Logo added */
+
+
+.main{
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px){
+  .sidenav{
+      padding-top: 15px;
+      margin-bottom: 50px;
+  }
+}
+@media screen and (min-height: 450px){
+  .sidenav{
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .login-form{margin-top: 10px;}
+  .register-form{margin-top: 10px;}
+}
+
+@media screen and (min-width: 768px) {
+  .main{
+      margin-left: 40%;
+  }
+  .sidenav{
+      width: 40%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+  }
+  .login-form{
+      margin-top: 80%;
+  }
+  .register-form{
+      margin-top: 20%;
+  }
+  /* Author */
+  .creator{
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+}
+
+.login-main-text{
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+.login-main-text h2{
+  font-weight: 300;    
+}
+.btn-black{
+  color: #FFF;
+  background-color: #000 !important;
+}
+.btn{
+  margin-right: 5px;
+}
+
+.creator{
+  margin-left: 20px;
+}
