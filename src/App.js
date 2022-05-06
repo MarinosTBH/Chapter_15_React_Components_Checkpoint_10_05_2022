@@ -1,21 +1,20 @@
 import './App.css';
-import Component from './Form.js'
-import logo from './logo.svg';
-
+import ProfilePhoto from './Component/Profile/ProfilePhoto.js'
+import FullName from './Component/Profile/FullName.js'
+import Address from './Component/Profile/Address.js'
 
 
 function App() {
   return (
-    <div className="main">
-      <section>
-        <div className='logoo'>
-          <img src={logo} className="app-logo" alt="logo"/>
-          <p className="pbr"><small>Powered by React</small></p>
-        </div>
-        <Component/>
-        <p className="creator"><small>Mohamed Amine Terbah</small></p>
-      </section>
-    </div>
+    <>   <section className='content-box'>
+    <ProfilePhoto/>
+    <FullName/>
+    <Address/>
+  </section>
+    <div className='triangle-container'><div className='triangle'>
+     
+      </div></div>
+    </>
          
   );
 }
